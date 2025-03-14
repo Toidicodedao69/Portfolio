@@ -48,7 +48,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
                                 key={section}
                                 href={`#${section}`}
                                 className={`px-3 py-2 rounded-md transition-colors ${
-                                    activeSection === section ? "bg-gray-700 text-white" : "text-gray-300 hover:text-white"
+                                    activeSection === section ? "bg-gray-500 text-white" : "text-gray-300 hover:text-white"
                                 }`}
                             >
                                 {section.charAt(0).toUpperCase() + section.slice(1)}
