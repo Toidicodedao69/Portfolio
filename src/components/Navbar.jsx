@@ -1,6 +1,30 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
+    // Tracks and highlight navbar link of the currently active section
+    const [activeSection, setActiveSection] = useState("");
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = ["home", "about", "projects", "contact"];
+            const scrollPosition = window.scrollY;
+
+            for (let section of sections) {
+                const element = document.getElementById(section);
+                if (element) {
+                    const { offsetTop, offsetHeight } = element;
+                    if (scrollPosition >= offsetTop - 100 && scrollPosition < offsetTop + offsetHeight - 100) {
+                        setActiveSection(section);
+                    }
+                }
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+
     useEffect(() => {
         document.body.style.overflow = menuOpen ? "hidden" : "";
     }, [menuOpen]);
@@ -19,10 +43,21 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
                     </div>
 
                     <div className="hidden md:flex items-center space-x-8">
-                        <a href="#home" className="text-gray-300 hover:text-white transition-colors"> Home </a>
+                        {["home", "about", "projects", "contact"].map((section) => (
+                            <a
+                                key={section}
+                                href={`#${section}`}
+                                className={`px-3 py-2 rounded-md transition-colors ${
+                                    activeSection === section ? "bg-gray-700 text-white" : "text-gray-300 hover:text-white"
+                                }`}
+                            >
+                                {section.charAt(0).toUpperCase() + section.slice(1)}
+                            </a>
+                        ))}
+                        {/* <a href="#home" className="text-gray-300 hover:text-white transition-colors"> Home </a>
                         <a href="#about" className="text-gray-300 hover:text-white transition-colors"> About </a>
                         <a href="#projects" className="text-gray-300 hover:text-white transition-colors"> Projects </a>
-                        <a href="#contact" className="text-gray-300 hover:text-white transition-colors"> Contact </a>
+                        <a href="#contact" className="text-gray-300 hover:text-white transition-colors"> Contact </a> */}
                     </div>
 
                 </div>

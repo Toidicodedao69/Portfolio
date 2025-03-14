@@ -34,7 +34,7 @@ export const Contact = () => {
                             <input type="text" id="subject" name="subject" required value={formData.subject} className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5" placeholder="Subject" onChange={(e) => setFormData({ ...formData, subject: e.target.value })} />
                         </div>
                         <div className="relative">
-                            <input type="email" id="email" name="email" required value={formData.email} className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5" placeholder="example@gmail.com" onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
+                            <input type="email" id="email" name="email" required value={formData.email} className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5" placeholder="youremail@gmail.com" onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                         </div>
                         <div className="relative">
                             <textarea id="message" name="message" required value={formData.message} rows={5} className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5" placeholder="Enter Your Messages" onChange={(e) => setFormData({ ...formData, message: e.target.value })}>
