@@ -10,7 +10,7 @@ export const Home = () => {
                 </h1>
 
                 <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
-                    A passionate Full-Stack Developer whose goal is to build solutions that offer both exceptional performance and delightful user experience.
+                    A passionate Full-Stack Developer whose goal is to build quality solutions that offer both performance and user experience.
                 </p>
 
                 <div className="flex justify-center space-x-4">
