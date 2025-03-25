@@ -15,10 +15,10 @@ export const About = () => {
 
                     <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
                         <p className="text-gray-300 mb-5">
-                            I'm very ambitious full-stack developer looking for a role with the opportunity to work with the latest technologies on challenging and diverse projects.
+                            I am looking for a role with the opportunity to work with the latest technologies on challenging and diverse projects.
                         </p>
                         <p className="text-gray-300 mb-5">
-                            I'm quietly confident, naturally curious, and an avid problem-solver. I'm experienced in modern technologies, object-oriented design, and quality engineering practices.
+                            I am quietly confident, naturally curious, and an avid problem-solver. I am experienced in modern technologies, object-oriented design, and quality engineering practices.
                         </p>
                         {/* Tech Skills */}
                         
