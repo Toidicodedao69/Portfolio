@@ -3,7 +3,7 @@ import { RevealOnScroll } from "../RevealOnScroll";
 export const About = () => {
     const frontendSkills = ["React", "TypeScript", "JavaScript", "TailwindCSS", "Bootstrap"];
 
-    const backendSkills = ["C#", ".NET Core API", ".NET Core MVC", "Entity Framework", "Node.js", "LINQ", "PostgreSQL", "MySQL"];
+    const backendSkills = ["C#", ".NET Core API", ".NET Core MVC", "Entity Framework", "LINQ", "MS SQL", "PostgreSQL", "MySQL"];
 
     return (
         <section id="about" className="min-h-screen flex items-center justify-center py-20 transition-all duration-300 ease-in-out">
@@ -18,7 +18,7 @@ export const About = () => {
                             I am looking for a role with the opportunity to work with the latest technologies on challenging and diverse projects.
                         </p>
                         <p className="text-gray-300 mb-5">
-                            I am quietly confident, naturally curious, and an avid problem-solver. I am experienced in modern technologies, object-oriented design, and quality engineering practices.
+                            I am confident, naturally curious, and an avid problem-solver. I am experienced in modern technologies, object-oriented design, and quality engineering practices.
                         </p>
                         {/* Tech Skills */}
                         
@@ -37,10 +37,10 @@ export const About = () => {
                                         Designed and developed a large language model (LLM) pipeline to process text and audio streams.
                                     </li>
                                     <li>
-                                        Used the company's framework to implement microservice architecture on the LLM pipeline.
+                                        Implemented microservice architecture on the LLM pipeline using the company's framework.
                                     </li>
                                     <li>
-                                        Used MQTT servers to handle communication between the pipeline's components.
+                                        Handled communication between the pipeline's components with MQTT protocol
                                     </li>
                                 </ul>
 

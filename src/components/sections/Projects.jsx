@@ -13,7 +13,7 @@ export const Projects = () => {
                         <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
                             <h3 className="text-xl font-bold mb-2"> Sport World</h3>
                             <p className="text-gray-400 mb-4">
-                                An online sport store developed with ASP.NET Core framework. This web application includes all neccessary ecommerce features from ordering, checking-out, and payment to managing and tracking orders.
+                                An end-to-end e-commerce store developed with ASP.NET Core framework. The site offers seamless shopping experience neccessary and comprehensive management tools for admin.
                             </p>
                             <div className="flex flex-wrap gap-2 mb-4">
                                 {["ASP.NET Core", "MVC", "EF Core", "MS SQL", "Azure", "GitHub Actions"].map((tech, key) => (
